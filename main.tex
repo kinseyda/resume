@@ -12,10 +12,16 @@
 \usepackage{bm}
 \usepackage[super]{nth}
 \usepackage{tikz}
+\usepackage{amsmath}
 \usetikzlibrary{calc, shadings}
-\hypersetup{colorlinks=true, urlcolor=black, }
+\hypersetup{ 
+	colorlinks=false, 
+	urlbordercolor=blue, 
+	pdfborderstyle={/S/U/W 1} % border style will be underline of width 1pt
+}
 \urlstyle{monospace}
 \pagenumbering{gobble}
+
 
 \graphicspath{{images/}}
 
@@ -51,6 +57,9 @@
 }
 
 \begin{document}
+
+\small
+
 \noindent
 % Tikz header. Code is ugly with lots of hardcoded values
 % Please don't hold it against me.
@@ -95,22 +104,22 @@
 
 \vspace*{0.5\baselineskip}
 
-\fancySection{Summary}
 
-\textbf{Computer science} student and \textbf{software developer} in Ottawa with
-several years of experience in programming.
+\hspace*{\fill} \textbf{Software developer} and \textbf{computer science} student in Ottawa with
+several years of experience in programming.\hspace*{\fill}
 
-\vspace*{0.5\baselineskip}
+
+\vspace*{-0.5\baselineskip}
 
 \vspace*{\fill}
 
 \fancySection{Education}
 
 \experience{University of Ottawa}[Honours Bachelor of Science in
-	\textbf{Computer Science}][\nth{3} Year (Graduation 2024)]
+	\textbf{Computer Science}][\nth{4} Year (Graduation 2024)]
 
 \begin{itemize}
-	\item \textbf{CGPA} of \textbf{9.62}\(\sfrac{}{10}\).
+	\item \textbf{CGPA} of \textbf{9.56}\(\sfrac{}{10}\).
 	\item \textbf{Dean's list} / \textbf{Merit Scholarship} recipient
 	      \(\times\)2.
 \end{itemize}
@@ -118,6 +127,12 @@ several years of experience in programming.
 \vspace*{\fill}
 
 \fancySection{Experience}
+
+\experience{Software Developer (CO-OP)}[Corning Technology Center of Montreal / iBwave Solutions][September 2023 --- December 2023]
+
+\begin{itemize}
+	\item In progress!
+\end{itemize}
 
 \experience{Web Developer (CO-OP)}[SkyWare Labs][January 2023 --- April 2023]
 
@@ -137,6 +152,18 @@ several years of experience in programming.
 \vspace*{\fill}
 
 \fancySection{Personal Projects}
+
+\experience{Muziko}[][\faGithub\
+	\href{https://github.com/kinseyda/muziko}{GitHub},\
+	\includegraphics[height=1.5ex]{muziko-icon-small.png}\
+	\href{https://kinseyda.github.io/muziko/}{Website}]
+
+\begin{itemize}
+	\item Created a modern \textbf{React} based web app to consume Spotify's web
+	      API, with \textbf{Tailwind CSS} and \textbf{daisyUI} components.
+	\item Implemented forum-style comments system using a
+	      \textbf{Firebase}/\textbf{Firestore} \textbf{NoSQL} database.
+\end{itemize}
 
 \experience{Neural Playground}[][\faGithub\
 	\href{https://github.com/kinseyda/neural-playground}{GitHub},\
@@ -168,10 +195,15 @@ several years of experience in programming.
 \fancySection{Skills}
 
 \begin{itemize}
-	\item \textbf{Programming}: Proficient in C, Java, Javascript, Python, SQL,
-	      Typescript. Familiar with Assembly, Kotlin, Rust
-	\item \textbf{Technologies/Frameworks}: Android, Angular, BiRT, Leaflet,
-	      Node.js, PostgreSQL, RxJS, Spring, vis.js, Vue
+
+	\item \textbf{Programming}: \(\begin{cases} \text{Fluent:}   & \text{C,
+	              HTML/CSS, Java, Javascript, Python, SQL, Typescript}
+              \\
+              \text{Familiar:} & \text{Assembly, Go, Kotlin, Rust}
+	      \end{cases}\)
+	\item \textbf{Technologies/Frameworks}: Android, Angular, BiRT, Bootstrap,
+	      daisyUI, Leaflet, Node.js, PostgreSQL, React, RxJS, Spring, Tailwind
+	      CSS, vis.js, Vue
 	\item \textbf{Software}: Git, Jira, Linux, Unix
 \end{itemize}
 
